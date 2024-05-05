@@ -1,0 +1,12 @@
+{
+	"manifest_version": 3,
+	"name": "Metamorphose Trimmer",
+	"version": "1.0.0",
+	"description": "Trim excessive page links on Metamorphose.org message board index pages",
+	"content_scripts": [{
+		"js": ["trimmer.js"],
+		"matches": ["https://*.metamorphose.org/thread/*se0=thread&se1=index"]
+	}],
+	"permissions": ["scripting", "activeTab"],
+	"host_permissions": ["https://www.metamorphose.org/"]
+}
